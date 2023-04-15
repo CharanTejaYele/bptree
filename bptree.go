@@ -26,7 +26,7 @@ type BPTree struct {
 // Init initializes the B+ tree with the given maximum degree
 // and key comparer and returns it.
 func (bpt *BPTree) Init(maxDegree int, keyComparer KeyComparer) *BPTree {
-	if maxDegree < 4 {
+	if maxDegree < 3 {
 		panic(errors.New("bptree: invalid maximum degree"))
 	}
 
